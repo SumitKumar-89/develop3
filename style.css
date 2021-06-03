@@ -1,0 +1,62 @@
+*{
+    padding:0; margin: 0; box-sizing: border-box;
+}
+header{
+    width: 95%;
+    height: 100vh;
+    background: url('../pictures/bag2.png');
+    background-size:cover;
+    background-position: right,center;
+}
+.heading h1{
+    color: white;
+}
+body{
+    color: white;
+}
+.heading{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
+}
+h1{
+    font-size: 3em;
+}
+h1 span {
+    font-size: 3.5em;
+}
+
+#timer{
+    display: flex;
+    width: 500px;
+    margin: 0  auto;
+    margin-top: 30px;
+}
+
+#timer  div{
+    position: relative;
+    width: 120px;
+    padding: 20px;
+    margin: 0 5px;
+    font-size: 1.5em;
+    background: white;
+    color: black;
+    -webkit-box-reflect:below 1px linear-gradient(transparent,transparent,#0004);
+
+}
+#timer div:last-child{
+    background: #e91e63;
+    color: white;
+}
+
+#footer{
+    background:olive;
+    color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+}

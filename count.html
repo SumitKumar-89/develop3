@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charsheet ="UTF-8">
+        <title> Responsive Countdown timer</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="js/custom.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    </head>
+</html>
+<body>
+    <header>
+
+<div class="heading">
+    <h1> <span>2021 </span><br> CountDown for my Birthday</h1>
+    <div id="timer"></div>
+
+</div>
+
+    </header>   
+
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script src="js/countdown1.js"></script>
+
+
+    <script type="text/javascript">
+        $('#timer').countdown('2021/09/08', function(event) {
+          $(this).html(event.strftime('<div>%w weeks </div>'
+          + '<div> %d days </div>'
+          + '<div> %H Hours </div>'
+          +'<div>%M Minutes </div>'
+          +'<div> %S Seconds </div>'
+          ));
+        });
+      </script>
+
+<section id ="footer">
+    <h2>Developed by Sumit kumar</h2>
+    <img src="pictures/icon.png"    width="70">
+</section>
+
+<script src="js/jquery.ripples-min.js"></script>
+<script>
+    jQuery(document).ready(function(){
+        $("header").ripples({
+  dropRadius: 20,
+  perturbance: 0.03,
+});
+    });
+</script> 
+
+</body>        
